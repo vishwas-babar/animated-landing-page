@@ -20,64 +20,54 @@ const Hero2 = ({ className = "" }) => {
 
     const items = [
         {
-            clickText: 'option 1',
+            clickText: 'Entrepreneurs',
             heading: 'Lorem ipsum dolor sit amet.',
             content: 'lorem ipsum dolor sit amet consectetur adipisicing elit. A mollitia esse soluta nostrum quia neque  saepe atque quia! Totam et quaerat distinctio aliquid deleniti rem quisquam facilis nesciunt?'
         },
         {
-            clickText: 'option 2',
+            clickText: 'Artists',
             heading: 'Lorem ipsum dolor sit amet.',
             content: 'sadlfjk asldfj  asdfjl or sit amet asdf;l adf elit. A mollitia esse soluta nostrum quia dfg  asdf atque dsg! Totam et a a aliquid deleniti rem quisquam facilis nesciunt?'
         },
         {
-            clickText: 'option 3',
+            clickText: 'Business Leaders',
             heading: 'Lorem ipsum dolor sit amet.',
             content: 'lorem ipsum dolor sit amet consectetur adipisicing elit. A mollitia esse soluta nostrum quia neque  saepe atque quia! Totam et quaerat distinctio aliquid deleniti rem quisquam facilis nesciunt?'
         },
         {
-            clickText: 'option 4',
+            clickText: 'Content Creator',
             heading: 'Lorem ipsum dolor sit amet.',
             content: 'lorem ipsum dolor sit amet consectetur adipisicing elit. A mollitia esse soluta nostrum quia neque  saepe atque quia! Totam et quaerat distinctio aliquid deleniti rem quisquam facilis nesciunt?'
         },
         {
-            clickText: 'option 5',
+            clickText: 'Change-Makers',
             heading: 'Lorem ipsum dolor sit amet.',
             content: 'lorem ipsum dolor sit amet consectetur adipisicing elit. A mollitia esse soluta nostrum quia neque  saepe atque quia! Totam et quaerat distinctio aliquid deleniti rem quisquam facilis nesciunt?'
         },
-        {
-            clickText: 'option 6',
-            heading: 'Lorem ipsum dolor sit amet.',
-            content: 'lorem ipsum dolor sit amet consectetur adipisicing elit. A mollitia esse soluta nostrum quia neque  saepe atque quia! Totam et quaerat distinctio aliquid deleniti rem quisquam facilis nesciunt?'
-        },
-        {
-            clickText: 'option 7',
-            heading: 'Lorem ipsum dolor sit amet.',
-            content: 'lorem ipsum dolor sit amet consectetur adipisicing elit. A mollitia esse soluta nostrum quia neque  saepe atque quia! Totam et quaerat distinctio aliquid deleniti rem quisquam facilis nesciunt?'
-        }
     ]
 
 
     return (
         <div className={` snap-div ${className}`}>
-            <div className='h-full px-10 w-full flex flex-col items-center justify-start bg-gray-900 mt-28'>
-                <div className='w-full '>
+            <div className='h-full px-10 w-full flex flex-col items-center justify-start  mt-28'>
 
-                    <motion.h1
-                        variants={variants}
-                        initial='hidden'
-                        whileInView='visible'
-                        className=' text-gray-300 -ml-80 text-4xl'>
-                        Lorem, ipsum dolor.
-                    </motion.h1>
-                </div>
+                <div className='mt-10 flex justify-around'>
+                    {/* <div className=' w-full flex items-start bg-red-400 '>
 
-                <div className='mt-10 flex'>
+                    </div> */}
                     <motion.div
                         variants={variants}
                         initial='hidden'
                         whileInView='visible'
-                        className='w-full flex items-center justify-center mt-5 '>
-                        <img src={hero2Img} className=' w-80 h-auto ' alt="" />
+                        className='w-full flex items-start ml-60 justify-center mt-5 '>
+                        {/* <img src={hero2Img} className=' w-80 h-auto ' alt="" /> */}
+                        <motion.h1
+                            variants={variants}
+                            initial='hidden'
+                            whileInView='visible'
+                            className=' text-gray-300 -ml-80 text-4xl'>
+                            Who should join?
+                        </motion.h1>
                     </motion.div>
 
                     <div className='flex w-full flex-col'>
@@ -94,7 +84,7 @@ const Hero2 = ({ className = "" }) => {
 
                                 <div
                                     ref={ref}
-                                    className='h-28 relative bg-gray-900 z-50 text-gray-400 font-semibold rounded-full overflow-visible w-[40rem] '
+                                    className='h-28 relative bg-gray-900 z-20 text-gray-400 font-semibold rounded-full overflow-visible w-[40rem] '
                                 >
 
                                 </div>
@@ -122,9 +112,9 @@ const Hero2 = ({ className = "" }) => {
                                         <div className={` h-[2px] transition-all ease-in-out duration-500 bg-[#EBC8A0] ${selectedItem === 1 ? "w-20" : "w-0"}`}></div>
                                     </div>
                                 </div>
-                                <div className='w-20 h-10 relative '>
+                                <div className='w-20 -translate-x-10 h-10 relative '>
                                     <div
-                                        className={` absolute  text-md text-gray-400 transition-all duration-500 ease-in-out cursor-pointer ${selectedItem === 2 ? "" : ""}`}
+                                        className={` absolute text-nowrap  text-md text-gray-400 transition-all duration-500 ease-in-out cursor-pointer ${selectedItem === 2 ? "" : ""}`}
                                         onClick={() => setSelectedItem(2)}
                                     >
                                         {items[2].clickText}
@@ -133,11 +123,11 @@ const Hero2 = ({ className = "" }) => {
                                 </div>
                                 <div className='w-20 h-10 relative '>
                                     <div
-                                        className={` absolute  text-md text-gray-400 transition-all duration-500 ease-in-out cursor-pointer ${selectedItem === 3 ? "" : ""}`}
+                                        className={` absolute text-nowrap  text-md text-gray-400 transition-all duration-500 ease-in-out cursor-pointer ${selectedItem === 3 ? "" : ""}`}
                                         onClick={() => setSelectedItem(3)}
                                     >
                                         {items[3].clickText}
-                                        <div className={` h-[2px] transition-all ease-in-out duration-500 bg-[#EBC8A0] ${selectedItem === 3 ? "w-20" : "w-0"}`}></div>
+                                        <div className={` h-[2px] transition-all ease-in-out text-nowrap duration-500 bg-[#EBC8A0] ${selectedItem === 3 ? "w-20" : "w-0"}`}></div>
                                     </div>
                                 </div>
                             </div>

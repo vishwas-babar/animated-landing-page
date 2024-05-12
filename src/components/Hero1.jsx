@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import boxBg from '../assets/company-bg.png'
 import bg from '../assets/12.png'
+import logo from '../assets/tectic-logo.png'
 import { motion, spring, useMotionValue, useTransform } from 'framer-motion'
 
 
@@ -60,7 +61,7 @@ const Hero1 = ({ className="" }) => {
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}>
                     <motion.img
-                        src={bg}
+                        src={logo}
                         style={{ x: xOffset, y: yOffset }} // Move the image based on the cursor position
                         drag // Enable drag functionality when hovered
                         dragConstraints={{ left: 0, top: 0, right: 300, bottom: 200 }} // Adjust constraints as needed

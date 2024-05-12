@@ -46,25 +46,25 @@ function Slider() {
 
     const cetnerClass = {
         outerDiv: "absolute mb-40 ",
-        innerdiv: `absolute z-20 w-80  z-20 opacity-1  mt-4 transition-all duration-500 ease-in-out scale-150 mb-40`,
+        innerdiv: `absolute z-20 w-60  z-20 opacity-1  mt-4 transition-all duration-500 ease-in-out scale-110 mb-40`,
         img: `w-28 h-auto`
     }
 
     const leftClass = {
         outerDiv: "absolute mr-80 ",
-        innerdiv: `opacity-1 absolute mr-[33rem] scale-75 mt-20 mr-20 transition-all duration-500 ease-in-out`,
+        innerdiv: `opacity-1 w-60 absolute mr-[33rem] scale-75 mt-20 mr-20 transition-all duration-500 ease-in-out`,
         img: `w-28 h-auto`
     }
 
     const rightClass = {
         outerDiv: "absolute ml-80",
-        innerdiv: `opacity-1 absolute ml-[33rem] scale-75 mt-20 ml-20 transition-all duration-500 ease-in-out`,
+        innerdiv: `opacity- w-60 absolute ml-[33rem] scale-75 mt-20 ml-20 transition-all duration-500 ease-in-out`,
         img: `w-28 h-auto`
     }
 
     const defaultClass = {
         outerDiv: "absolute ",
-        innerdiv: `scale-75 opacity-0  transition-all duration-500 ease-in-out`,
+        innerdiv: `scale-75 opacity-0 w-60 transition-all duration-500 ease-in-out`,
         img: `w-28 h-auto`
     }
 
@@ -98,7 +98,7 @@ function Slider() {
     }
 
     return (
-        <div className="relative w-2/3 flex items-center justify-between">
+        <div className="relative w-2/3 mx-auto border-none bg-transparent flex items-center justify-between">
             <PrevArrow className="absolute -left-20" onClick={handlePrev} />
             <motion.div
                 initial={{ opacity: 0, y: 50 }}

@@ -18,13 +18,13 @@ export default function Hero4() {
 
     return (
         <div className="snap-div relative overflow-hidden h-full w-full flex items-center justify-center" >
-            <div className={`w-[80%] absolute flex gap-20 transition-all duration-[2500ms]  ease-in-out flex-col items-start ${!sideDiv ? "ml-0" : "-ml-[150%]"}`}>
+            <div className={`w-[80%] absolute flex gap-10 transition-all duration-[2500ms]  ease-in-out flex-col items-start ${!sideDiv ? "ml-0" : "-ml-[150%]"}`}>
                 <h1 className="w-[50rem] text-3xl text-gray-200 text-start">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sapiente necessitatibus expedita. Provident rem, aspernatur molestias quidem perferendis totam quae.
+                    What is the dropout mindset    
                 </h1>
 
                 <span className="w-[25rem] text-start text-gray-400 text-sm">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam enim dignissimos reiciendis officia similique nam neque beatae labore, consequatur distinctio. Adipisci, ex. Provident id labore modi expedita, rerum, quasi animi, nesciunt amet quisquam voluptates error cumque. Cupiditate eligendi unde earum?
+                    The dropout mindset isn’t what you might expect. It’s about a person who dares to challenge the world, unlocking their full potential, leaving comfort behind, and risking it all to ignite a profound transformation in their life. It's about embracing fear, uncertainty, and the thrill of the unknown. It's a journey fueled by passion, determination, and unwavering belief in one's dreams. It's not just a mindset; it's a relentless pursuit of purpose and fulfillment, driven by the courage to defy conventions and create a legacy that resonates with the heart and soul.
                 </span>
             </div>
 
