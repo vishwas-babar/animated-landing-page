@@ -6,11 +6,17 @@
 /* scroll-snap */
 .x .mandatory-scroll-snapping {
     scroll-snap-type: x mandatory;
+    position: absolute;
+    right: 0px;
+    left: 0px;
 }
 
 .x .proximity-scroll-snapping {
     scroll-snap-type: x proximity;
-    
+    position: absolute;
+    right: 0px;
+    left: 0px;
+
 }
 
 .y .mandatory-scroll-snapping {
@@ -20,11 +26,17 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    position: absolute;
+    right: 0px;
+    left: 0px;
 
 }
 
 .y .proximity-scroll-snapping {
     scroll-snap-type: y proximity;
+    position: absolute;
+    right: 0px;
+    left: 0px;
 }
 
 .snap-div {
